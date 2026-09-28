@@ -69,7 +69,7 @@ public static class Lapidas
             case "BELIEVE_TAB_25":
                 return "GringaDubs";
             case "BELIEVE_TAB_26":
-                return "Locutando Ando";
+                return "Nazareno Gabriel Noro";
             case "BELIEVE_TAB_27":
                 return "Shiondub";
             case "BELIEVE_TAB_28":
