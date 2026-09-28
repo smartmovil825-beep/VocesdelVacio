@@ -1,0 +1,119 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <ProjectGuid>{6E567A40-4903-4522-935D-5B33E82E2016}</ProjectGuid>
+
+        <RootNamespace>VocesDelVacio</RootNamespace>
+        <AssemblyTitle>VocesDelVacio</AssemblyTitle>
+        <AssemblyVersion>0.0.1.2</AssemblyVersion>
+        <Deterministic>true</Deterministic>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <LangVersion>latest</LangVersion>
+        <TargetFramework>net472</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>CS1591</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="Assembly-CSharp">
+          <HintPath>D:\HK-Mobile-Modding\Hollow Knight\Mods\Api Modding Pc\Managed\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="Core_FsmUtil">
+          <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Hollow Knight\hollow_knight_Data\Managed\Mods\Core.FsmUtil\Core_FsmUtil.dll</HintPath>
+        </Reference>
+        <Reference Include="FrogCore">
+          <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Hollow Knight\hollow_knight_Data\Managed\Mods\FrogCore\FrogCore.dll</HintPath>
+        </Reference>
+        <Reference Include="HKMirror">
+          <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Hollow Knight\hollow_knight_Data\Managed\Mods\HKMirror\HKMirror.dll</HintPath>
+        </Reference>
+        <Reference Include="MMHOOK_Assembly-CSharp">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\MMHOOK_Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="MMHOOK_PlayMaker">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\MMHOOK_PlayMaker.dll</HintPath>
+        </Reference>
+        <Reference Include="Mono.Cecil">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\Mono.Cecil.dll</HintPath>
+        </Reference>
+        <Reference Include="MonoMod.RuntimeDetour">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\MonoMod.RuntimeDetour.dll</HintPath>
+        </Reference>
+        <Reference Include="MonoMod.Utils">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\MonoMod.Utils.dll</HintPath>
+        </Reference>
+        <Reference Include="Newtonsoft.Json">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\Newtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="PlayMaker">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\PlayMaker.dll</HintPath>
+        </Reference>
+        <Reference Include="netstandard">
+            <HintPath>$(HollowKnightFolder)\netstandard.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="mscorlib">
+            <HintPath>$(HollowKnightFolder)\mscorlib.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="Satchel">
+          <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Hollow Knight\hollow_knight_Data\Managed\Mods\Satchel\Satchel.dll</HintPath>
+        </Reference>
+        <Reference Include="SFCore">
+          <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Hollow Knight\hollow_knight_Data\Managed\Mods\SFCore\SFCore.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine">
+          <HintPath>..\..\..\..\..\Documentos\Managed\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AnimationModule">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\UnityEngine.AnimationModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AssetBundleModule">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.AudioModule">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\UnityEngine.AudioModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.ImageConversionModule">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.IMGUIModule">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.InputLegacyModule">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.JSONSerializeModule">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.Physics2DModule">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.TextRenderingModule">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UI">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\UnityEngine.UI.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UIModule">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\UnityEngine.UIModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UnityWebRequestModule">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.VideoModule">
+          <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\UnityEngine.VideoModule.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="Resources\*" />
+        <EmbeddedResource Include="Resources\AchievementKeys\*" />
+    </ItemGroup>
+
+    <Target Name="CopyMod" AfterTargets="PostBuildEvent">
+        <Copy SourceFiles="$(TargetPath);$(TargetDir)$(TargetName).pdb;$(TargetDir)$(TargetName).xml" DestinationFolder="$(OutputDirectory)\$(TargetName)" SkipUnchangedFiles="true" />
+    </Target>
+</Project>
