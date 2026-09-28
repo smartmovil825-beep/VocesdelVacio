@@ -4,4 +4,3 @@ HKMirror
 Osmi
 SFCore
 FrogCore
-Hallownest-Vocalized-AudioLoader
