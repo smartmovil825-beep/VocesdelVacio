@@ -21,7 +21,7 @@ public static class RollCredits
     // Scale to screen height
     public static float RollSpeed => _rollSpeed * (Screen.height / 1080f);
     private static readonly float _extraScrollForGame = 580f;
-    public static float ScrollMaxY => (_scrollMaxY + (!isFromMenu ? _extraScrollForGame : 0f)) * (Screen.height / 1080f);
+    public static float ScrollMaxY => (_scrollMaxY + (!isFromMenu ? _extraScrollForGame : 580f)) * (Screen.height / 1080f);
     private const string CreditsSceneName = "HKV_Credits";
     private static bool isFromMenu;
     private static bool goToHKVEnding = false;
