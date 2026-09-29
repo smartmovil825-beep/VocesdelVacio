@@ -106,7 +106,8 @@
         <Reference Include="UnityEngine.VideoModule">
           <HintPath>C:\Users\Retro\OneDrive\Documentos\Managed\UnityEngine.VideoModule.dll</HintPath>
         </Reference>
-    </ItemGroup>
+    
+</ItemGroup>
 
     <ItemGroup>
         <EmbeddedResource Include="Resources\*" />

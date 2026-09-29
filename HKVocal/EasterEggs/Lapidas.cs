@@ -13,7 +13,7 @@ public static class Lapidas
     {
         ModHooks.LanguageGetHook -= ChangeText;
     }
-
+    // Cambio de texto para las lápidas de los creadores de contenido
     private static string ChangeText(string key, string sheetTitle, string orig)
     {
         switch (key)
