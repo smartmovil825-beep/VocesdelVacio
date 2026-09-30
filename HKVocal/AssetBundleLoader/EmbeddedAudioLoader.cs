@@ -26,7 +26,7 @@ public static class EmbeddedAudioLoader
 
     public static bool AudioLoadSuccess { get; private set; } = false;
 
-    // Método para inicializar los hooks e iniciar la carga
+    
     public static void Initialize()
     {
         if (CoroutineHolder == null)
@@ -35,7 +35,7 @@ public static class EmbeddedAudioLoader
             Object.DontDestroyOnLoad(CoroutineHolder);
         }
 
-        // Suscribirse a los eventos del juego para bloquear el inicio/continuación mientras carga
+        
         On.GameManager.StartNewGame += StopStartNewGame;
         On.GameManager.ContinueGame += StopContinueGame;
 

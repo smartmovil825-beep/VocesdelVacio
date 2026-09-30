@@ -143,7 +143,7 @@ public sealed class HKVocals : Mod, IGlobalSettings<GlobalSettings>, ILocalSetti
         if (Language.Language.CurrentLanguage() == LanguageCode.ES && activeStyle.Contains("HKVStyle"))
         {
             args.self.Title.sprite = AssemblyUtils.GetSpriteFromResources(
-                Random.Range(1, 1000) == 1 && _globalSettings.settingsOpened
+                Random.Range(1, 50) == 1 && _globalSettings.settingsOpened
                     ? "Resources.Title_alt.png"
                     : "Resources.Title.png"
             );
