@@ -35,7 +35,7 @@ public static class AudioMenu
 
         //change the key of the text so it can be changed
         VolumeSlider.Find("Label").RemoveComponent<AutoLocalizeTextUI>();
-        VolumeSlider.Find("Label").GetComponent<Text>().text = "HK Vocals Volume: ";
+        VolumeSlider.Find("Label").GetComponent<Text>().text = "Volumen de Voces del Vacío: ";
         VolumeSlider.SetActive(true);
             
         //to make sure when go is cloned, it gets the value of the previous session not the value of the music slider
@@ -47,7 +47,7 @@ public static class AudioMenu
         HKVocalsSettings.transform.localPosition = Vector3.up * 335f;
         HKVocalsSettings.RemoveComponent<EventTrigger>();
         HKVocalsSettings.Find("Text").RemoveComponent<AutoLocalizeTextUI>();
-        HKVocalsSettings.Find("Text").GetComponent<Text>().text = "Go to Hallownest Vocalized Settings";
+        HKVocalsSettings.Find("Text").GetComponent<Text>().text = "Ajuste de audio de Voces del Vacío";
         var mb = HKVocalsSettings.GetComponent<UMenuButton>();
         mb.proceed = true;
         mb.buttonType = UMenuButton.MenuButtonType.CustomSubmit;
