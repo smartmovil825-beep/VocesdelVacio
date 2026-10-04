@@ -1,6 +1,5 @@
 Satchel
 Core.FsmUtil
 HKMirror
-Osmi
 SFCore
 FrogCore

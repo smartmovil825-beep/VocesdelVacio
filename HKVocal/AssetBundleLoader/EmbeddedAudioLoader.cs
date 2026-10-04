@@ -22,7 +22,7 @@ public static class EmbeddedAudioLoader
     private static NonBouncer CoroutineHolder;
     private static GameObject TextCanvas;
     private static Text TextPanelText;
-    private const string WaitText = "Por favor espera mientras se cargan los audios...";
+    private const string WaitText = "Los audios se están cargando, espera un momento...";
 
     public static bool AudioLoadSuccess { get; private set; } = false;
 
@@ -97,11 +97,6 @@ public static class EmbeddedAudioLoader
         {
             string bundlePath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "audiobundle");
 
-            if (!File.Exists(bundlePath))
-            {
-                bundlePath = Path.Combine(Application.persistentDataPath, "Mods", "VocesDelVacio", "audiobundle");
-            }
-
             if (File.Exists(bundlePath))
             {
                 loadRequest = AssetBundle.LoadFromFileAsync(bundlePath);
@@ -109,21 +104,12 @@ public static class EmbeddedAudioLoader
             }
             else
             {
-                byte[] bundleBytes = Satchel.AssemblyUtils.GetBytesFromResources("audiobundle");
-                if (bundleBytes != null && bundleBytes.Length > 0)
-                {
-                    loadRequest = AssetBundle.LoadFromMemoryAsync(bundleBytes);
-                    HKVocals.DoLog("Cargando AudioBundle asíncronamente desde recursos incrustados.");
-                }
+                HKVocals.DoLog($"[ERROR] No se encontró el archivo audiobundle en la ruta: {bundlePath}");
             }
 
             if (loadRequest != null)
             {
                 loadRequest.completed += SaveLoadedBundle;
-            }
-            else
-            {
-                HKVocals.DoLog("[ERROR] No se encontró la ruta del archivo ni el recurso para el audiobundle.");
             }
         }
         catch (Exception ex)
